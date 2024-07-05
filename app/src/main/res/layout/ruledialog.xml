@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+
+    android:background="@drawable/scoreback"
+    >
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialogtextview"
+        android:gravity="center"
+        android:text="rules and game"
+        android:fontFamily="@font/arcade"
+
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/textview1"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:padding="10dp"
+                android:text="Cheese Chase is an exhilarating chase game inspired by Tom and Jerry, where you control Jerry the mouse to navigate through obstacles and traps while being chased by Tom the cat. Jerry moves left and right across three tracks, avoiding obstacles to prevent Tom from closing in. If Jerry hits an obstacle, Tom gets closer, and a second hit means getting caught and ending the game. The goal is to run as far as possible, with the distance determining the score. The game includes advanced features like increasing Jerry's speed over time, introducing random traps with punishments or rewards, and power-ups that can make Jerry immune to obstacles or arm him with a gun, using collected cheese as bullets. Players collect keys every 30 seconds, which are used to activate power-ups. The game also utilizes the gyroscope sensor for navigation, offering an immersive and challenging experience."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:textSize="40sp"
+        android:layout_below="@id/scrollView"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#01c1f0"
+        android:text="okay"
+        android:fontFamily="@font/arcade"
+        />
+
+
+
+
+
+</RelativeLayout>

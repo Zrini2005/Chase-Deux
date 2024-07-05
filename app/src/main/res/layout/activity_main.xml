@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.cheesechase.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progressDrawable="@drawable/loadingbar"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:progress="0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/loading"
+        android:text="Loading..."
+        android:fontFamily="@font/arcade"
+        android:layout_marginBottom="30dp"
+        android:textSize="50sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:padding="16dp"
+        android:text="Score: 0      Cheese : 0"
+
+        android:fontFamily="@font/arcade"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/scoreback"
+        android:alpha="0.5"/>
+
+
+    <ImageView
+        android:id="@+id/xbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/pausebutton" />
+
+
+    <ImageButton
+        android:id="@+id/leftPowerUpButton"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_gravity="bottom|start"
+        android:scaleType="fitXY"
+        android:src="@drawable/booster"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:contentDescription="TODO"
+        android:background="@null"
+        android:clickable="true"
+        android:alpha="0.8"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/rightPowerUpButton"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cheese1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="TODO"
+        android:layout_gravity="bottom|end"
+        android:background="@null"
+        android:clickable="true"
+
+        android:alpha="0.8"
+        android:visibility="gone"
+         />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+
+
+        app:srcCompat="@drawable/home" />
+    <LinearLayout
+        android:id="@+id/heartsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="16dp"
+        >
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/collectedLettersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/scoreback"
+        android:padding="8dp"
+        android:layout_gravity="top|center"
+         android:layout_marginTop="80dp"
+        android:alpha="0.3"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
